@@ -6,6 +6,8 @@ export async function pullMessages(channel: Discord.TextChannel) {
 
   for (const message of messages.values()) {
     let text = message.content.replace(/\n/g, " ").trim();
+
+    // YouTube, Soundcloud & Spotify embeds have titles, which is a good source of content for this bot
     if (
       message.embeds.length > 0 &&
       message.embeds[0].data &&
@@ -13,6 +15,7 @@ export async function pullMessages(channel: Discord.TextChannel) {
     ) {
       text = message.embeds[0].data.title;
     }
+
     if (
       text !== "" &&
       message.author.bot === false && // Bots
