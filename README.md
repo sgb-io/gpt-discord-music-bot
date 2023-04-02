@@ -6,9 +6,13 @@ Prototypal implementation that uses `gpt-3.5-turbo` and is currently only set up
 
 ## Run the bot
 
+Prerequisites: Node.js (generally, v16 or later), `yarn`
+
 1. Clone the project
 
-2. Create a `.env` in the project root, define all the environment variables:
+2. `yarn`
+
+3. Create a `.env` in the project root, define all the environment variables:
 
 ```
 DISCORD_TOKEN=<Your Discord bot's token>
@@ -20,9 +24,9 @@ ADMIN_USER_ID=<Discord ID for the bot admin>
 RECOMMEND_COMMAND=<Command that triggers the recommendation, e.g. !music-recommend>
 ```
 
-3. Boot the bot (uses ts-node): `yarn start`
+4. Boot the bot (uses ts-node): `yarn start`
 
-4. Trigger a recommendation by sending either a DM to the bot or a message in the music channel, using the value you supplied for `RECOMMEND_COMMAND`, e.g `!music-recommend`
+5. Trigger a recommendation by sending either a DM to the bot or a message in the music channel, using the value you supplied for `RECOMMEND_COMMAND`, e.g `!music-recommend`
 
 **Note** - repsonses aren't always fast. ChatGPT often needs some thinking time - usually, it takes about 5-15 seconds.
    
