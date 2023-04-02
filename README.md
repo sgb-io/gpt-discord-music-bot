@@ -23,6 +23,8 @@ RECOMMEND_COMMAND=<Command that triggers the recommendation, e.g. !music-recomme
 3. Boot the bot (uses ts-node): `yarn start`
 
 4. Trigger a recommendation by sending either a DM to the bot or a message in the music channel, using the value you supplied for `RECOMMEND_COMMAND`, e.g `!music-recommend`
+
+**Note** - repsonses aren't always fast. ChatGPT often needs some thinking time - usually, it takes about 5-15 seconds.
    
 If all went well, the bot should reply to your message with some recommendations:
 
