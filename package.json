@@ -1,0 +1,19 @@
+{
+  "name": "gpt-discord-bot",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/sgb-io/gpt-discord-bot.git",
+  "author": "sgb-io <sam@sgb.io>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.8.0",
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1",
+    "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  }
+}
